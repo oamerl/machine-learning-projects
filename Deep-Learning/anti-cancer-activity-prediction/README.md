@@ -3,7 +3,7 @@
 This project is a bioassay task for anticancer activity prediction, where each chemical compound is represented as a graph, with atoms representing nodes and bonds as edges.
 A chemical compound is positive against non-small cell lung cancer, or negative otherwise.
 
-**The experimental protocol used and how was it carried out?**
+**The experimental protocol used and how was it carried out:**
 * 1- Read data file
 * 2- Divide content of file based in graphs
 * 3- Convert graph data from strings to tensors
@@ -12,7 +12,7 @@ A chemical compound is positive against non-small cell lung cancer, or negative 
 * 6- Prepare graph batches for training
 * 7 - Models training and evaluation
 
->During training we will try:
+During training we will try:
 * Different message passing mechanisms
 * Different hyperparameter settings for GNN layers
 * Will check effect of dense layer configuration on final result of graph classification
@@ -42,11 +42,11 @@ A chemical compound is positive against non-small cell lung cancer, or negative 
 * choosing the suitable message passing mechanism
 * what if the data happens to be in need for cleaning how we will deal with it
 
-**The impact**
+**The Impact:**
 
 * The impact of this model is that researches that work in the anticancer medicine research can suggest possible compounds combinations from their domain knowledge that they wanna see if effective or not and instead of phyically manufacturing the compund and test it we can give the model the compound graph data. Graphs that are predicted to be more probable to be anticancer can be focused on and further studied by the researchers and dont waste time or money on compunds that are predicted to be not beneficial. 
 * So this model can save money and time that otherwise could be spent on unuseful compounds
 * We let researchers focus more on the promising compunds combinations
 
-**What is an ideal solution?**
+**Ideal Solution:**
 * The ideal solution was found to be GGNN message passing layer with one single dense layer of 1 unit is used, using batch size of 32 graphs/batch and number GCN layers of 3 with setting the "aggregation_function" hyperparameter to 'mean' instead of maxand using dropout by setting "layer_input_dropout_rate" to 0.3
