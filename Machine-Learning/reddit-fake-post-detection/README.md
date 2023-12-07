@@ -1,0 +1,6 @@
+## Project Description
+
+*   **Problem Formulation:** the goal of this task is to classify news into two classes either fake news or legitimate news based on its title. The data mining function here is binary classification in which we output the probability of being fake news based on a model trained on the provided reddit dataset which contains 60,000 title and their corresponding label.
+*   **The challenges** that we might face is that the data (text) contains alot of non-english letters and characters and may also include misspellings so it requires extensive preprocessing and cleaning which needs to be handled carefully as this typicaly affects the model performance heavily.
+*   **The impact** that this task will have is that if we could build a model with good performance on classifying the news legitimacy based on its title we could use this data later to suppress the spread of news classified as fake and reduce rumors on a subject platform for better user experience, which can have a positive effect on the users retention and usage of the platform which in part can lead to more revenue if you use ads on the platform, as the more the users the more ad agencies are willing to pay.
+*   **The ideal solution** as will be discussed below was found to be logistic regression model with TF-IDF vectorization using word-level analyzer and lemmatization.
